@@ -1,0 +1,49 @@
+.overlay {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none; /* Permite que o clique passe por fora do painel */
+    background: rgba(0, 0, 0, 0); /* Torna o overlay invisível fora do painel */
+  }
+
+  .overlay-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    max-height: 80%;
+    max-width: 50%;
+    overflow-y: auto;
+    position: absolute;
+    pointer-events: all; /* Permite clique no painel */
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .region {
+    margin-bottom: 15px;
+  }
+
+  .region h3 {
+    margin: 0 0 10px 0;
+  }
+
+  .region ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .region li {
+    margin-bottom: 5px;
+  }
