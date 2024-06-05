@@ -45,7 +45,7 @@ const App = () => {
           onClick={() => setIsOverlayOpen(true)}
           style={{ top: `${position.top}px`, left: `${position.left}px` }}
         >
-          Abrir Overlay
+          Open
         </button>
       )}
       {isOverlayOpen && <Overlay onClose={() => setIsOverlayOpen(false)} position={position} />}
